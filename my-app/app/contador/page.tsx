@@ -1,19 +1,15 @@
-"use client";
+import Contador from "./Contador"
 
-import { useState } from "react";
+type Props = {}
 
-const Contador = () => {
-  const [contador, setContador] = useState(0);
-
+const Page = (props: Props) => {
   return (
     <div>
-      <h1>Contador: {contador}</h1>
+      <h1>Página do contador</h1>
 
-      <button onClick={() => setContador((contador) => contador + 1)}>
-        Incrementar
-      </button>
+      <Contador />
     </div>
-  );
-};
+  )
+}
 
-export default Contador;
+export default Page
